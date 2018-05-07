@@ -57,7 +57,7 @@ class RefugeeController extends Controller
 
     public function create(Request $request)
     {
-        return view('refugee.create');
+        return view('Refugee.create');
     }
 
     public function store(Request $request)
