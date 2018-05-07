@@ -8,7 +8,7 @@
 @section('content')
     <h1>Add a new refugee</h1>
 
-    <form method='POST' action='/Test/public/Refugees'>
+    <form method='POST' action='/Refugees'>
         {{ csrf_field() }}
 
         <fieldset>
@@ -18,9 +18,9 @@
             <input type='text' name='lastName' id='lastName' value='{{ old('lastName') }}' >
 
             <label for='firstName'>birth Year</label>
-            <input type='text' name='birthYear' id='birthYear' value='{{ old('birthYear') }}' >
+            <input type='text' name='birthYear' id='birthYear' value='{{ old('city') }}' >
             <label for='firstName'>City</label>
-            <input type='text' name='city' id='city' value='{{ old('city') }}' >
+            <input type='text' name='city' id='city' value='{{ old('birthYear') }}' >
             <label for='firstName'>Cell Number</label>
             <input type='text' name='cell_phone' id='cell_phone' value='{{ old('cell_phone') }}' >
         </fieldset>
